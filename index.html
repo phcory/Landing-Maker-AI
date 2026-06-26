@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Maker IA</title>
@@ -8,18 +14,30 @@
 </head>
 
 <body>
- 
+
     <p class="etiqueta"> ✦ Landing Maker - Gerador com Inteligência Artificial</p>
 
     <h1>Crie sua Página
         <br>
-    <span>com um Prompt</span></h1>
+        <span>com um Prompt</span>
+    </h1>
 
     <p class="subtitulo">Descreva o seu negócio e veja a IA criar uma página profissional em segundos</p>
-    
-    <textarea></textarea>
 
-    <button>Gerar</button>
-    
+    <div class="caixa_entrada">
+        <textarea placeholder="Descreva seu Negócio. Ex: Cafeteria, Lanchonete, etc."></textarea>
+        <button>⚡ Gerar</button>
+    </div>
+
+    <div class="caixa-resultado">
+
+        <p class="bloco-codigo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi autem consectetur,
+            libero modi repellat repudiandae placeat iusto minima culpa incidunt assumenda soluta voluptatem officia
+            accusamus. Quisquam neque incidunt libero cum.</p>
+
+        <iframe class="bloco-site"></iframe> <!--guarda um site dentro-->
+
+    </div>
 </body>
+
 </html>
