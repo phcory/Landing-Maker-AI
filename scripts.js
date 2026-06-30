@@ -1,4 +1,4 @@
-let chave = "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"
+let chave = "PUTYOURAPIKEYHERE"
 let endereco = "https://api.groq.com/openai/v1/chat/completions"
 let comando = `Você é um designer web premiado e Programador. 
 Crie uma landing page COMPLETA e VISUALMENTE IMPRESSIONANTE para o negócio descrito.
@@ -30,7 +30,7 @@ async function gerarCodigo() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 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"
+            "Authorization": "Bearer PUTYOURAPIKEYHERE"
         },
         body: JSON.stringify({
             "model": "llama-3.3-70b-versatile",
@@ -40,7 +40,7 @@ async function gerarCodigo() {
                     "content": textarea
                 },{
                     "role" : "system",
-                    "content" : "Você é um programador. Você recebe uma tema de negócio e cria uma landing page com HTML e CSS. Responda apenas com código. A página é em português do Brasil. Use cores que tragam harmonia e instiguem o usúario. Use fontes de texto que combinem com o layout da página. Se baseie em abordagens modernas"
+                    "content" : comando
                     
                 }
             ],
